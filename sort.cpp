@@ -41,7 +41,8 @@ int main (void) {
   std::cout << '\n';
   */
   // print out content:
-
+  // First part of our program completed!! Woopie!!
+  /*
   int counter = 0;
   int split_num2 = 1;
   for (std::vector<int>::iterator it=myvector.begin(); it!=myvector.end(); ++it) {
@@ -50,6 +51,25 @@ int main (void) {
       }
     std::cout << *it << " ";
     counter++;
+  }
+  std::cout << '\n';
+  */
+  // print out content:
+  // 1st round of our program the first round consists of two merges in parallel:
+  // (Split #1 and Split #2) and (Split #3 and Split #4).!! Woopie!!
+  int counter2 = 0;
+  int sub_counter= 0;
+  int split_num3 = 1;
+  int split_num4 = 2;
+  for (std::vector<int>::iterator j=myvector.begin(); j!=myvector.end(); ++j) {
+      if(counter2 % 5 == 0) {
+        if(sub_counter % 10 == 0) {
+          std::cout << "\n Split # (" << split_num3++  << " + "<< split_num4 << "): ";
+        }
+      }
+    std::cout << *j << " ";
+    counter2++;
+    sub_counter++;
   }
   std::cout << '\n';
 
