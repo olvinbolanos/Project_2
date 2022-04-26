@@ -1,1 +1,7 @@
 sort.cpp
+./sort.cpp
+/sort.cpp
+./sort
+/sort
+*.cpp
+sort.cpp
